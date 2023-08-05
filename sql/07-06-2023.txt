@@ -1,0 +1,6 @@
+
+SI NO         QUERY
+========     ===================================================
+
+1            ALTER TABLE `categories` ADD `sub_categoty_video` VARCHAR(191) NULL AFTER `parent_id`;
+

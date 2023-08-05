@@ -1,0 +1,7 @@
+
+SI NO         QUERY
+========     ===================================================
+
+1            ALTER TABLE `products` ADD `member_discount_type` VARCHAR(80) NOT NULL DEFAULT 'percent' AFTER `member_discount`;
+ 
+2            ALTER TABLE `categories` ADD `sub_categoty_video` VARCHAR(191) NULL AFTER `parent_id`;

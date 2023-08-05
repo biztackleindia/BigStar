@@ -1,0 +1,14 @@
+
+SI NO         QUERY
+========     ===================================================
+
+1          ALTER TABLE `pincodes` ADD `is_cash_on_delivery` BOOLEAN NOT NULL AFTER `pincode`;
+
+2          ALTER TABLE `pincodes` ADD `is_online_payment` BOOLEAN NOT NULL AFTER `is_cash_on_delivery`;
+
+3          ALTER TABLE `products` ADD `unit_weight` VARCHAR(191) NULL AFTER `unit`;
+
+4          ALTER TABLE `pincodes` CHANGE `pincode` `from_pincode` INT(11) NULL DEFAULT NULL;
+
+5          ALTER TABLE `pincodes` ADD `to_pincode` INT(11) NULL AFTER `from_pincode`;
+

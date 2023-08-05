@@ -1,0 +1,6 @@
+SI NO         QUERY
+========     ===================================================
+
+1         INSERT INTO `business_settings` (`id`, `type`, `value`, `created_at`, `updated_at`) VALUES ('82', 'transport_mode', '', NULL, NULL);
+
+2         UPDATE `business_settings` SET `value` = 'surface' WHERE `business_settings`.`id` = 82;

@@ -1,0 +1,6 @@
+SI NO         QUERY
+========     ===================================================
+
+1        ALTER TABLE `products` ADD `product_sku` VARCHAR(191) NULL AFTER `brand_id`;
+
+

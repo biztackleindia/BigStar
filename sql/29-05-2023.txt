@@ -1,0 +1,11 @@
+
+SI NO         QUERY
+========     ===================================================
+
+1            ALTER TABLE `users` ADD `member_id` VARCHAR(191) NULL AFTER `is_email_verified`, ADD `member_approval` INT NULL AFTER `member_id`;
+
+
+2            ALTER TABLE `users` CHANGE `member_approval` `member_approval` INT(11) NOT NULL DEFAULT '0';
+
+
+3            ALTER TABLE `users` ADD `member_approval_status` BOOLEAN NOT NULL AFTER `member_approval`;

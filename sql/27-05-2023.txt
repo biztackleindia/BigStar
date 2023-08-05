@@ -1,0 +1,2 @@
+ALTER TABLE `products` ADD `member_discount` DOUBLE NULL AFTER `purchase_price`;
+

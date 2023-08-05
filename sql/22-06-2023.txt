@@ -1,0 +1,11 @@
+SI NO         QUERY
+========     ===================================================
+
+1        CREATE TABLE `pickup_locations` (`id` int(11) NOT NULL AUTO_INCREMENT,`pickup_name` varchar(191) NOT NULL,
+         `is_active` tinyint(1) NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+2         INSERT INTO `pickup_locations` (`id`, `pickup_name`, `is_active`) VALUES ('1', 'trivandrum', '1'), ('2', 'attingal ', '1');
+
+
+3         INSERT INTO `business_settings` (`id`, `type`, `value`, `created_at`, `updated_at`) VALUES ('83', 'pickup_location_id', '1', '2023-06-22 09:41:23', '2023-06-22 09:41:23');
