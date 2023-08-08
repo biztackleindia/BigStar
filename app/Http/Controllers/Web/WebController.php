@@ -56,7 +56,10 @@ class WebController extends Controller
         }
         return redirect()->route('home');
     }
-
+    public function web_maintenance_mode()
+    {
+        return view('web-views.maintenance-mode');
+    }
     public function home()
     {
         $home_categories = Category::where('home_status', true)->priority()->get();
