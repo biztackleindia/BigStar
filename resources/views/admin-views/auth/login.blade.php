@@ -15,15 +15,15 @@
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="{{asset('public/assets/back-end')}}/css/vendor.min.css">
-    <link rel="stylesheet" href="{{asset('public/assets/back-end')}}/vendor/icon-set/style.css">
+    <link rel="stylesheet" href="{{asset('assets/back-end')}}/css/vendor.min.css">
+    <link rel="stylesheet" href="{{asset('assets/back-end')}}/vendor/icon-set/style.css">
     <!-- CSS Front Template -->
-    <link rel="stylesheet" href="{{asset('public/assets/back-end')}}/css/theme.minc619.css?v=1.0">
-    <link rel="stylesheet" href="{{asset('public/assets/back-end')}}/css/toastr.css">
+    <link rel="stylesheet" href="{{asset('assets/back-end')}}/css/theme.minc619.css?v=1.0">
+    <link rel="stylesheet" href="{{asset('assets/back-end')}}/css/toastr.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <style>
         body{
-            background-image: url({{asset('public/banner4_bg.jpg')}});
+            background-image: url({{asset('banner4_bg.jpg')}});
                 background-position: center;
     background-size: cover;
         }
@@ -112,7 +112,7 @@
         @php($e_commerce_logo=\App\Model\BusinessSetting::where(['type'=>'company_web_logo'])->first()->value)
         <a class="d-flex justify-content-center mb-1" href="javascript:">
             <img class="z-index-2" src="{{asset("storage/app/public/company/".$e_commerce_logo)}}" alt="Logo"
-                 onerror="this.src='{{asset('public/assets/back-end/img/400x400/img2.jpg')}}'"
+                 onerror="this.src='{{asset('assets/back-end/img/400x400/img2.jpg')}}'"
                  style="max-width: 220px;">
         </a>
 
@@ -251,11 +251,11 @@
 
 
 <!-- JS Implementing Plugins -->
-<script src="{{asset('public/assets/back-end')}}/js/vendor.min.js"></script>
+<script src="{{asset('assets/back-end')}}/js/vendor.min.js"></script>
 
 <!-- JS Front -->
-<script src="{{asset('public/assets/back-end')}}/js/theme.min.js"></script>
-<script src="{{asset('public/assets/back-end')}}/js/toastr.js"></script>
+<script src="{{asset('assets/back-end')}}/js/theme.min.js"></script>
+<script src="{{asset('assets/back-end')}}/js/toastr.js"></script>
 {!! Toastr::message() !!}
 
 @if ($errors->any())
@@ -333,7 +333,7 @@
 
 <!-- IE Support -->
 <script>
-    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="{{asset('public/assets/admin')}}/vendor/babel-polyfill/polyfill.min.js"><\/script>');
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="{{asset('assets/admin')}}/vendor/babel-polyfill/polyfill.min.js"><\/script>');
 </script>
 </body>
 </html>
