@@ -3,8 +3,8 @@
 @section('title', \App\CPU\translate('Language'))
 
 @push('css_or_js')
-    <link href="{{ asset('public/assets/select2/css/select2.min.css')}}" rel="stylesheet">
-    <link href="{{ asset('public/assets/back-end/css/custom.css')}}" rel="stylesheet">
+    <link href="{{ asset('assets/select2/css/select2.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('assets/back-end/css/custom.css')}}" rel="stylesheet">
     <style>
         .image-preview {
             height: 17px!important;
@@ -52,10 +52,10 @@
                                 <select name="language[]" id="language" onchange="$('#alert_box').show();"
                                         data-maximum-selection-length="3" class="form-control js-select2-custom country-var-select"
                                         required multiple=true>
-                                    @foreach(\Illuminate\Support\Facades\File::files(base_path('public/assets/front-end/img/flags')) as $path)
+                                    @foreach(\Illuminate\Support\Facades\File::files(base_path('assets/front-end/img/flags')) as $path)
                                         <option value="{{ pathinfo($path)['filename'] }}"
                                                 {{in_array(pathinfo($path)['filename'],$language)?'selected':''}}
-                                                title="{{ asset('public/assets/front-end/img/flags/'.pathinfo($path)['filename'].'.png') }}">
+                                                title="{{ asset('assets/front-end/img/flags/'.pathinfo($path)['filename'].'.png') }}">
                                             {{ strtoupper(pathinfo($path)['filename']) }}
                                         </option>
                                     @endforeach

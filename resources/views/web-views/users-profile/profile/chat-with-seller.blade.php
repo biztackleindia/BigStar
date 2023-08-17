@@ -459,7 +459,7 @@
                                             <div class="chat_people" id="chat_people">
                                                 <div class="chat_img">
                                                     <img
-                                                        onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                                        onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                                         src="{{asset('storage/app/public/shop/'.$shop->image)}}"
                                                         style="border-radius: 10px">
                                                 </div>

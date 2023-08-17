@@ -42,7 +42,7 @@
     @endif
     <meta property="twitter:url" content="{{route('product',[$product->slug])}}">
 
-    <link rel="stylesheet" href="{{asset('public/assets/front-end/css/product-details.css')}}"/>
+    <link rel="stylesheet" href="{{asset('assets/front-end/css/product-details.css')}}"/>
     <style>
         .inp_text{
             display: block;
@@ -256,7 +256,7 @@
                                             class="cz-preview-item d-flex align-items-center justify-content-center {{$key==0?'active':''}}"
                                             id="image{{$key}}">
                                             <img class="cz-image-zoom img-responsive" style="width:100%;height:auto"
-                                                onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                                onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                                 src="{{asset("storage/app/public/product/$photo")}}"
                                                 data-zoom="{{asset("storage/app/public/product/$photo")}}"
                                                 alt="Product image" width="">
@@ -276,7 +276,7 @@
                                                             <a class="cz-thumblist-item  {{$key==0?'active':''}} d-flex align-items-center justify-content-center "
                                                             href="#image{{$key}}">
                                                                 <img
-                                                                    onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                                                    onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                                                     src="{{asset("storage/app/public/product/$photo")}}"
                                                                     alt="Product thumb">
                                                             </a>

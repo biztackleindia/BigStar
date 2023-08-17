@@ -217,9 +217,7 @@
                         
                         <!----Right image  -->
                         <div class="col-md-5 col-lg-7" style="text-align: center;">
-                 <!--            <img class="imge11" src="{{asset('public/icon12a.png')}}" alt="image"-->
                  
-                 <!--style="max-width: 600px;width: 100%;">-->
                         </div>
                          <!----Right image End -->
                         </div>

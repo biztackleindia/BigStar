@@ -1,8 +1,8 @@
 @extends('layouts.back-end.app-seller')
 
 @push('css_or_js')
-    <link href="{{asset('public/assets/back-end/css/tags-input.min.css')}}" rel="stylesheet">
-    <link href="{{ asset('public/assets/select2/css/select2.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/back-end/css/tags-input.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('assets/select2/css/select2.min.css')}}" rel="stylesheet">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 @endpush
 
@@ -334,7 +334,7 @@
                                                 <div class="card">
                                                     <div class="card-body">
                                                         <img style="width: 100%" height="auto"
-                                                             onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                                             onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                                              src="{{asset("storage/app/public/product/meta")}}/{{$product['meta_image']}}"
                                                              alt="Meta image">
                                                     </div>
@@ -368,7 +368,7 @@
                                                     <div class="card">
                                                         <div class="card-body">
                                                             <img style="width: 100%" height="auto"
-                                                                 onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                                                 onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                                                  src="{{asset("storage/app/public/product/$photo")}}"
                                                                  alt="Product image">
                                                             <a href="{{route('seller.product.remove-image',['id'=>$product['id'],'name'=>$photo])}}"
@@ -412,12 +412,12 @@
 @endsection
 
 @push('script')
-    <script src="{{asset('public/assets/back-end')}}/js/tags-input.min.js"></script>
-    <script src="{{ asset('public/assets/select2/js/select2.min.js')}}"></script>
-    <script src="{{asset('public/assets/back-end/js/spartan-multi-image-picker.js')}}"></script>
+    <script src="{{asset('assets/back-end')}}/js/tags-input.min.js"></script>
+    <script src="{{ asset('assets/select2/js/select2.min.js')}}"></script>
+    <script src="{{asset('assets/back-end/js/spartan-multi-image-picker.js')}}"></script>
     <script>
         var imageCount = {{10-count(json_decode($product->images))}};
-        var thumbnail = '{{\App\CPU\ProductManager::product_image_path('thumbnail').'/'.$product->thumbnail??asset('public/assets/back-end/img/400x400/img2.jpg')}}';
+        var thumbnail = '{{\App\CPU\ProductManager::product_image_path('thumbnail').'/'.$product->thumbnail??asset('assets/back-end/img/400x400/img2.jpg')}}';
         $(function () {
             if (imageCount > 0) {
                 $("#coba").spartanMultiImagePicker({
@@ -427,7 +427,7 @@
                     groupClassName: 'col-6',
                     maxFileSize: '',
                     placeholderImage: {
-                        image: '{{asset('public/assets/back-end/img/400x400/img2.jpg')}}',
+                        image: '{{asset('assets/back-end/img/400x400/img2.jpg')}}',
                         width: '100%',
                     },
                     dropFileLabel: "Drop Here",
@@ -495,7 +495,7 @@
                 groupClassName: 'col-6',
                 maxFileSize: '',
                 placeholderImage: {
-                    image: '{{asset('public/assets/back-end/img/400x400/img2.jpg')}}',
+                    image: '{{asset('assets/back-end/img/400x400/img2.jpg')}}',
                     width: '100%',
                 },
                 dropFileLabel: "Drop Here",

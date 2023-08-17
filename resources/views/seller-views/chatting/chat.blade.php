@@ -292,7 +292,7 @@
                                         <div class="chat_people" id="chat_people">
                                             <div class="chat_img">
                                                 <img src="{{asset('storage/app/public/profile/'.$chatting->image)}}"
-                                                     onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                                     onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                                      style="border-radius: 15px; width: 30px; height: 30px">
                                             </div>
                                             <div class="chat_ib">
@@ -319,7 +319,7 @@
                                                     <div class="incoming_msg_img">
                                                         <img style="width: 30px;height: 30px;border-radius: 50%"
                                                              src="{{asset('storage/app/public/profile/'.$message->image)}}"
-                                                             onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                                             onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                                              alt="">
                                                     </div>
                                                     <div class="received_msg">

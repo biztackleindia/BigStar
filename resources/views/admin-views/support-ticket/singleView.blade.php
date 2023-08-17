@@ -24,7 +24,7 @@
             <div class="media pb-4">
                 <img class="rounded-circle" style="width: 40px; height:40px;"
                      src="{{asset('storage/app/public/profile')}}/{{isset($userDetails)?$userDetails['image']:''}}"
-                     onerror="this.src='{{asset('public/assets/back-end/img/160x160/img1.jpg')}}"
+                     onerror="this.src='{{asset('assets/back-end/img/160x160/img1.jpg')}}"
                      alt="{{isset($userDetails)?$userDetails['name']:'not found'}}"/>
                 <div class="media-body {{Session::get('direction') === "rtl" ? 'pr-3' : 'pl-3'}}">
                     <h6 class="font-size-md mb-2">{{isset($userDetails)?$userDetails['name']:'not found'}}</h6>
@@ -38,7 +38,7 @@
                     <div class="media pb-4">
                         <img class="rounded-circle" style="width: 40px; height:40px;"
                              src="{{asset('storage/app/public/profile')}}/{{isset($userDetails)?$userDetails['image']:''}}"
-                             onerror="this.src='{{asset('public/assets/back-end/img/160x160/img1.jpg')}}"
+                             onerror="this.src='{{asset('assets/back-end/img/160x160/img1.jpg')}}"
                              alt="{{isset($userDetails)?$userDetails['name']:'not found'}}"/>
                         <div class="media-body {{Session::get('direction') === "rtl" ? 'pr-3' : 'pl-3'}}">
                             <h6 class="font-size-md mb-2">{{isset($userDetails)?$userDetails['name']:'not found'}}</h6>
@@ -87,11 +87,11 @@
 
 @push('script')
     <!-- Page level plugins -->
-    <script src="{{asset('public/assets/back-end')}}/vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="{{asset('public/assets/back-end')}}/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="{{asset('assets/back-end')}}/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="{{asset('assets/back-end')}}/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="{{asset('public/assets/back-end')}}/js/demo/datatables-demo.js"></script>
-    <script src="{{asset('public/assets/back-end/js/croppie.js')}}"></script>
+    <script src="{{asset('assets/back-end')}}/js/demo/datatables-demo.js"></script>
+    <script src="{{asset('assets/back-end/js/croppie.js')}}"></script>
 
 @endpush

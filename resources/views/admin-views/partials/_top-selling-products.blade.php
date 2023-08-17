@@ -23,7 +23,7 @@
                         <div class="text-center mt-3">
                             <img style="height: 90px"
                                  src="{{\App\CPU\ProductManager::product_image_path('thumbnail')}}/{{$item->product['thumbnail']}}"
-                                 onerror="this.src='{{asset('public/assets/back-end/img/160x160/img2.jpg')}}'"
+                                 onerror="this.src='{{asset('assets/back-end/img/160x160/img2.jpg')}}'"
                                  alt="{{$item->product->name}} image">
                         </div>
                         <div class="text-center mt-2">

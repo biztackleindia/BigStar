@@ -198,7 +198,7 @@
                                         <th scope="row">{{$banners->firstItem()+$key}}</th>
                                         <td>
                                             <img width="80"
-                                                 onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                                 onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                                  src="{{asset('storage/app/public/banner')}}/{{$banner['photo']}}">
                                         </td>
                                         <td>{{$banner->banner_type}}</td>
@@ -231,7 +231,7 @@
                     </div>
                     @if(count($banners)==0)
                         <div class="text-center p-4">
-                            <img class="mb-3" src="{{asset('public/assets/back-end')}}/svg/illustrations/sorry.svg"
+                            <img class="mb-3" src="{{asset('assets/back-end')}}/svg/illustrations/sorry.svg"
                                  alt="Image Description" style="width: 7rem;">
                             <p class="mb-0">{{ \App\CPU\translate('No_data_to_show')}}</p>
                         </div>

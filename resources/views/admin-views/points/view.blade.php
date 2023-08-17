@@ -87,7 +87,7 @@
 
 @push('script')
     <!-- Page level custom scripts -->
-    <script src="{{ asset('public/assets/select2/js/select2.min.js')}}"></script>
+    <script src="{{ asset('assets/select2/js/select2.min.js')}}"></script>
     <script>
         $(".js-example-theme-single").select2({
             theme: "classic"
