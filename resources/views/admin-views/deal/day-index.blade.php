@@ -3,7 +3,7 @@
 @section('title', \App\CPU\translate('Deal Page'))
 
 @push('css_or_js')
-    <link href="{{ asset('public/assets/select2/css/select2.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('assets/select2/css/select2.min.css')}}" rel="stylesheet">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 @endpush
 
@@ -156,7 +156,7 @@
                 </div>
                 @if(count($deals)==0)
                     <div class="text-center p-4">
-                        <img class="mb-3" src="{{asset('public/assets/back-end')}}/svg/illustrations/sorry.svg" alt="Image Description" style="width: 7rem;">
+                        <img class="mb-3" src="{{asset('assets/back-end')}}/svg/illustrations/sorry.svg" alt="Image Description" style="width: 7rem;">
                         <p class="mb-0">{{\App\CPU\translate('No data to show')}}</p>
                     </div>
                 @endif
@@ -186,7 +186,7 @@
         });
     </script>
 
-    <script src="{{asset('public/assets/back-end')}}/js/select2.min.js"></script>
+    <script src="{{asset('assets/back-end')}}/js/select2.min.js"></script>
     <script>
         $(".js-example-theme-single").select2({
             theme: "classic"

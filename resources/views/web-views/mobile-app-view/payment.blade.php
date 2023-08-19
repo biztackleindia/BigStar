@@ -17,11 +17,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="">
     <link rel="icon" type="image/png" sizes="16x16" href="">
 
-    <link rel="stylesheet" href="{{asset('public/assets/back-end')}}/css/toastr.css"/>
+    <link rel="stylesheet" href="{{asset('assets/back-end')}}/css/toastr.css"/>
     <!-- Main Theme Styles + Bootstrap-->
-    <link rel="stylesheet" media="screen" href="{{asset('public/assets/front-end')}}/css/theme.min.css">
-    <link rel="stylesheet" media="screen" href="{{asset('public/assets/front-end')}}/css/slick.css">
-    <link rel="stylesheet" href="{{asset('public/assets/back-end')}}/css/toastr.css"/>
+    <link rel="stylesheet" media="screen" href="{{asset('assets/front-end')}}/css/theme.min.css">
+    <link rel="stylesheet" media="screen" href="{{asset('assets/front-end')}}/css/slick.css">
+    <link rel="stylesheet" href="{{asset('assets/back-end')}}/css/toastr.css"/>
     @stack('css_or_js')
 
     {{--stripe--}}
@@ -40,7 +40,7 @@
                 <div style="position: fixed;z-index: 9999; left: 40%;top: 37% ;width: 100%">
                     <img width="200"
                          src="{{asset('storage/app/public/company')}}/{{\App\CPU\Helpers::get_business_settings('loader_gif')}}"
-                         onerror="this.src='{{asset('public/assets/front-end/img/loader.gif')}}'">
+                         onerror="this.src='{{asset('assets/front-end/img/loader.gif')}}'">
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@
                             {{ csrf_field() }}
                             <button class="btn btn-block click-if-alone" type="submit">
                                 <img width="150"
-                                     src="{{asset('public/assets/front-end/img/paypal.png')}}"/>
+                                     src="{{asset('assets/front-end/img/paypal.png')}}"/>
                             </button>
                         </form>
                     </div>
@@ -134,7 +134,7 @@
                         <button class="btn btn-block click-if-alone" type="button"
                                 onclick="$('.razorpay-payment-button').click()">
                             <img width="150"
-                                 src="{{asset('public/assets/front-end/img/razor.png')}}"/>
+                                 src="{{asset('assets/front-end/img/razor.png')}}"/>
                         </button>
                     </div>
                 </div>
@@ -148,7 +148,7 @@
                     <div class="card-body" style="height: 100px">
                         <a class="btn btn-block click-if-alone" href="{{route('paytm-payment')}}">
                             <img style="max-width: 150px; margin-top: -10px"
-                                 src="{{asset('public/assets/front-end/img/paytm.png')}}"/>
+                                 src="{{asset('assets/front-end/img/paytm.png')}}"/>
                         </a>
                     </div>
                 </div>
@@ -158,11 +158,11 @@
     </div>
 </div>
 
-<script src="{{asset('public/assets/front-end')}}/vendor/jquery/dist/jquery-2.2.4.min.js"></script>
-<script src="{{asset('public/assets/front-end')}}/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{{asset('assets/front-end')}}/vendor/jquery/dist/jquery-2.2.4.min.js"></script>
+<script src="{{asset('assets/front-end')}}/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 {{--Toastr--}}
-<script src={{asset("public/assets/back-end/js/toastr.js")}}></script>
-<script src="{{asset('public/assets/front-end')}}/js/sweet_alert.js"></script>
+<script src={{asset("assets/back-end/js/toastr.js")}}></script>
+<script src="{{asset('assets/front-end')}}/js/sweet_alert.js"></script>
 
 @php($mode = \App\CPU\Helpers::get_business_settings('bkash')['environment']??'sandbox')
 @if($mode=='live')

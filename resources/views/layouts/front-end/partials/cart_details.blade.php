@@ -87,7 +87,7 @@
                                     <div >
                                         <a href="{{route('product',$cartItem['slug'])}}">
                                             <img class="cart-img"
-                                                onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                                onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                                 src="{{\App\CPU\ProductManager::product_image_path('thumbnail')}}/{{$cartItem['thumbnail']}}"
                                                 alt="Product">
                                         </a>

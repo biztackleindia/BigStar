@@ -60,7 +60,7 @@
                                         <div class="pb-1">
                                             <center>
                                                 <img style="width: auto;border: 1px solid; border-radius: 10px; max-height:200px;" id="viewer"
-                                                    src="{{asset('public\assets\back-end\img\400x400\img2.jpg')}}" alt="banner image"/>
+                                                    src="{{asset('assets\back-end\img\400x400\img2.jpg')}}" alt="banner image"/>
                                             </center>
                                         </div>
         
@@ -87,7 +87,7 @@
                                         <div class="pb-1">
                                             <center>
                                                 <img style="width: auto;border: 1px solid; border-radius: 10px; max-height:200px;" id="viewerLogo"
-                                                    src="{{asset('public\assets\back-end\img\400x400\img2.jpg')}}" alt="banner image"/>
+                                                    src="{{asset('assets\back-end\img\400x400\img2.jpg')}}" alt="banner image"/>
                                             </center>
                                         </div>
         
@@ -103,7 +103,7 @@
                                         <div class="pb-1">
                                             <center>
                                                 <img style="width: auto;border: 1px solid; border-radius: 10px; max-height:200px;" id="viewerBanner"
-                                                     src="{{asset('public\assets\back-end\img\400x400\img2.jpg')}}" alt="banner image"/>
+                                                     src="{{asset('assets\back-end\img\400x400\img2.jpg')}}" alt="banner image"/>
                                             </center>
                                         </div>
         

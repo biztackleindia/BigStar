@@ -14,7 +14,7 @@
     <meta property="twitter:description" content="{!! substr($web_config['about']->value,0,100) !!}">
 
     <link rel="stylesheet" media="screen"
-          href="{{asset('public/assets/front-end')}}/vendor/nouislider/distribute/nouislider.min.css"/>
+          href="{{asset('assets/front-end')}}/vendor/nouislider/distribute/nouislider.min.css"/>
 @endpush
 
 @section('content')
@@ -47,7 +47,7 @@
                                 <a class="d-inline-block mx-auto mr-sm-4"
                                    href="{{route('product',$productDetails->slug)}}" style="width: 10rem;">
                                     <img
-                                        onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                        onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                         src="{{\App\CPU\ProductManager::product_image_path('thumbnail')}}/{{$productDetails['thumbnail']}}">
                                 </a>
                                 <div class="media-body pt-2">
@@ -284,5 +284,5 @@
 @endsection
 
 @push('script')
-    <script src="{{asset('public/assets/front-end')}}/vendor/nouislider/distribute/nouislider.min.js"></script>
+    <script src="{{asset('assets/front-end')}}/vendor/nouislider/distribute/nouislider.min.js"></script>
 @endpush

@@ -374,7 +374,7 @@
                         
                             <div class="" >
                               <a href="{{$item->link}}" target=”_blank”>
-                              <img src="{{asset('public/assets/back-end/img/'.$item->name.'.png')}}" alt="" style="height: 50px; width:50px; margin:10px;">
+                              <img src="{{asset('assets/back-end/img/'.$item->name.'.png')}}" alt="" style="height: 50px; width:50px; margin:10px;">
                               </a>
                             </div>
                             

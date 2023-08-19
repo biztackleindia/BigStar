@@ -20,7 +20,7 @@
                 <div class="modal-body" style="padding: 3px!important; cursor: pointer"
                      onclick="location.href='{{$banner['url']}}'">
                     <img class="d-block w-100"
-                         onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                         onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                          src="{{asset('storage/app/public/banner')}}/{{$banner['photo']}}"
                          alt="">
                 </div>

@@ -9,16 +9,16 @@
                 <a class="navbar-brand" href="{{route('seller.dashboard.index')}}" aria-label="">
                     @if (isset($shop))
                     <img class="navbar-brand-logo" style="max-height: 42px;"
-                            onerror="this.src='{{asset('public/assets/back-end/img/160x160/img1.jpg')}}'"
+                            onerror="this.src='{{asset('assets/back-end/img/160x160/img1.jpg')}}'"
                             src="{{asset("storage/app/public/shop/$shop->image")}}" alt="Logo" height="40" width="40">
                     <img class="navbar-brand-logo-mini" style="max-height: 42px;"
-                            onerror="this.src='{{asset('public/assets/back-end/img/160x160/img1.jpg')}}'"
+                            onerror="this.src='{{asset('assets/back-end/img/160x160/img1.jpg')}}'"
                             src="{{asset("storage/app/public/shop/$shop->image")}}"
                             alt="Logo" height="40" width="40">
 
                     @else
                         <img class="navbar-brand-logo-mini" style="max-height: 42px;"
-                                src="{{asset('public/assets/back-end/img/160x160/img1.jpg')}}"
+                                src="{{asset('assets/back-end/img/160x160/img1.jpg')}}"
                                 alt="Logo" height="40" width="40">
                     @endif
 
@@ -59,7 +59,7 @@
                                         @foreach(json_decode($lang['value'],true) as $data)
                                             @if($data['code']==$local)
                                                 <img class="{{Session::get('direction') === "rtl" ? 'ml-2' : 'mr-2'}}" width="20"
-                                                     src="{{asset('public/assets/front-end')}}/img/flags/{{$data['code']}}.png"
+                                                     src="{{asset('assets/front-end')}}/img/flags/{{$data['code']}}.png"
                                                      alt="Eng">
                                                 {{$data['name']}}
                                             @endif
@@ -72,7 +72,7 @@
                                                     <a class="dropdown-item pb-1" href="{{route('lang',[$data['code']])}}">
                                                         <img class="{{Session::get('direction') === "rtl" ? 'ml-2' : 'mr-2'}}"
                                                              width="20"
-                                                             src="{{asset('public/assets/front-end')}}/img/flags/{{$data['code']}}.png"
+                                                             src="{{asset('assets/front-end')}}/img/flags/{{$data['code']}}.png"
                                                              alt="{{$data['name']}}"/>
                                                         <span style="text-transform: capitalize">{{$data['name']}}</span>
                                                     </a>
@@ -134,9 +134,9 @@
                                      "type": "css-animation"
                                    }'>
                                 <div class="avatar avatar-sm avatar-circle">
-                                    {{-- <img src="{{asset('storage/app/public/seller/'.auth('seller')->user()->image)}}"  onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'" class="img-profile rounded-circle"> --}}
+                                    {{-- <img src="{{asset('storage/app/public/seller/'.auth('seller')->user()->image)}}"  onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'" class="img-profile rounded-circle"> --}}
                                     <img class="avatar-img"
-                                         onerror="this.src='{{asset('public/assets/back-end/img/160x160/img1.jpg')}}'"
+                                         onerror="this.src='{{asset('assets/back-end/img/160x160/img1.jpg')}}'"
                                          src="{{asset('storage/app/public/seller/')}}/{{auth('seller')->user()->image}}"
                                          alt="Image Description">
                                     <span class="avatar-status avatar-sm-status avatar-status-success"></span>
@@ -149,9 +149,9 @@
                                 <div class="dropdown-item-text">
                                     <div class="media align-items-center text-break">
                                         <div class="avatar avatar-sm avatar-circle mr-2">
-                                            {{-- <img src="{{asset('storage/app/public/seller/'.auth('seller')->user()->image)}}"  onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'" class="img-profile rounded-circle"> --}}
+                                            {{-- <img src="{{asset('storage/app/public/seller/'.auth('seller')->user()->image)}}"  onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'" class="img-profile rounded-circle"> --}}
                                             <img class="avatar-img"
-                                                 onerror="this.src='{{asset('public/assets/back-end/img/160x160/img1.jpg')}}'"
+                                                 onerror="this.src='{{asset('assets/back-end/img/160x160/img1.jpg')}}'"
                                                  src="{{asset('storage/app/public/seller/')}}/{{auth('seller')->user()->image}}"
                                                  alt="Image Description">
                                         </div>

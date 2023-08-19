@@ -1,8 +1,8 @@
 @extends('layouts.back-end.app')
 @section('title',\App\CPU\translate('Chat View'))
 @push('css_or_js')
-    <link href="{{asset('public/assets/back-end')}}/css/select2.min.css" rel="stylesheet"/>
-    <link href="{{asset('public/assets/back-end/css/croppie.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/back-end')}}/css/select2.min.css" rel="stylesheet"/>
+    <link href="{{asset('assets/back-end/css/croppie.css')}}" rel="stylesheet">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 @endpush
 
@@ -27,7 +27,7 @@
                         <div class="row ">
                             <div class="col-md-3 col-lg-3 hidden-xs hidden-sm">
                                 <img style="height: 8rem; width: 9rem;" class="img-circle"
-                                     src="{{asset('public/assets/front-end')}}/img/contacts/blank.jpg"
+                                     src="{{asset('assets/front-end')}}/img/contacts/blank.jpg"
                                      alt="User Pic">
                             </div>
 

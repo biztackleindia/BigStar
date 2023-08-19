@@ -148,7 +148,7 @@
                     <a class="d-inline-block mt-n1" href="{{route('home')}}">
                         <img style="max-height: 70px;max-width: 180px;"
                              src="{{asset("storage/app/public/company/")}}/{{ $web_config['footer_logo']->value }}"
-                             onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                             onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                              alt="{{ $web_config['name']->value }}"/>
                     </a>
                 </div>

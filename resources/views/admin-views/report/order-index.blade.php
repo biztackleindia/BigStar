@@ -31,7 +31,7 @@
             <div class="media mb-3">
                 <!-- Avatar -->
                 <div class="avatar avatar-xl avatar-4by3 {{Session::get('direction') === "rtl" ? 'ml-2' : 'mr-2'}}">
-                    <img class="avatar-img" src="{{asset('public/assets/back-end')}}/svg/illustrations/order.png"
+                    <img class="avatar-img" src="{{asset('assets/back-end')}}/svg/illustrations/order.png"
                          alt="Image Description">
                 </div>
                 <!-- End Avatar -->
@@ -708,10 +708,10 @@
 
 @push('script_2')
 
-    <script src="{{asset('public/assets/back-end')}}/vendor/chart.js/dist/Chart.min.js"></script>
+    <script src="{{asset('assets/back-end')}}/vendor/chart.js/dist/Chart.min.js"></script>
     <script
-        src="{{asset('public/assets/back-end')}}/vendor/chartjs-chart-matrix/dist/chartjs-chart-matrix.min.js"></script>
-    <script src="{{asset('public/assets/back-end')}}/js/hs.chartjs-matrix.js"></script>
+        src="{{asset('assets/back-end')}}/vendor/chartjs-chart-matrix/dist/chartjs-chart-matrix.min.js"></script>
+    <script src="{{asset('assets/back-end')}}/js/hs.chartjs-matrix.js"></script>
 
     <script>
         $(document).on('ready', function () {

@@ -48,8 +48,8 @@
                                 <hr>
                                 <center>
                                     <img style="width: 20%; border: 1px solid; border-radius: 10px;" id="viewer"
-                                         onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
-                                         src="{{asset('public/assets/admin/img/900x400/img1.jpg')}}" alt="image"/>
+                                         onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
+                                         src="{{asset('assets/admin/img/900x400/img1.jpg')}}" alt="image"/>
                                 </center>
                             </div>
                             
@@ -117,7 +117,7 @@
                                     </td>
                                     <td>
                                         <img style="height: 75px"
-                                             onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                             onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                              src="{{asset('storage/app/public/notification')}}/{{$notification['image']}}">
                                         {{--<span class="d-block font-size-sm">{{$banner['image']}}</span>--}}
                                     </td>

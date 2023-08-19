@@ -242,7 +242,7 @@
                         @foreach(json_decode($language['value'],true) as $data)
                         @if($data['code'] == $local)
                         <img class="{{Session::get('direction') === "rtl" ? 'ml-2' : 'mr-2'}}" width="20"
-                            src="{{asset('public/assets/front-end')}}/img/flags/{{$data['code']}}.png"
+                            src="{{asset('assets/front-end')}}/img/flags/{{$data['code']}}.png"
                             alt="{{$data['name']}}">
                         {{$data['name']}}
                         @endif
@@ -256,7 +256,7 @@
                         <li>
                             <a class="dropdown-item pb-1" href="{{route('lang',[$data['code']])}}">
                                 <img class="{{Session::get('direction') === "rtl" ? 'ml-2' : 'mr-2'}}" width="20"
-                                    src="{{asset('public/assets/front-end')}}/img/flags/{{$data['code']}}.png"
+                                    src="{{asset('assets/front-end')}}/img/flags/{{$data['code']}}.png"
                                     alt="{{$data['name']}}" />
                                 <span style="text-transform: capitalize">{{$data['name']}}</span>
                             </a>
@@ -280,14 +280,14 @@
                     href="{{route('home')}}" style="min-width: 7rem;">
                     <img style="max-width: 200px;max-height: 70px!important;"
                         src="{{asset("storage/app/public/company")."/".$web_config['web_logo']->value}}"
-                        onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                        onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                         alt="{{$web_config['name']->value}}" />
                 </a>
                 <a class="navbar-brand d-sm-none {{Session::get('direction') === "rtl" ? 'ml-2' : 'mr-2'}}"
                     href="{{route('home')}}">
                     <img style="height: 38px!important;width:auto;" class="mobile-logo-img"
                         src="{{asset("storage/app/public/company")."/".$web_config['mob_logo']->value}}"
-                        onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                        onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                         alt="{{$web_config['name']->value}}" />
                 </a>
                 <!-- Search-->
@@ -337,7 +337,7 @@
                                 <div class="navbar-tool-icon-box bg-secondary">
                                     <img style="width: 40px;height: 40px"
                                         src="{{asset('storage/app/public/profile/'.auth('customer')->user()->image)}}"
-                                        onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                        onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                         class="img-profile rounded-circle">
                                 </div>
                             </div>
@@ -443,7 +443,7 @@
                                         onclick="location.href='{{route('products',['id'=> $category['id'],'data_from'=>'category','page'=>1])}}'">
                                         <div>
                                             <img src="{{asset("storage/app/public/category/$category->icon")}}"
-                                                onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                                onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                                 style="width: 18px; height: 18px; ">
                                             <span
                                                 class="{{Session::get('direction') === "rtl" ? 'pr-3' : 'pl-3'}}">{{$category['name']}}</span>
@@ -513,7 +513,7 @@
                                 onclick="location.href='{{route('products',['id'=> $category['id'],'data_from'=>'category','page'=>1])}}'">
                                 <div>
                                     <img src="{{asset("storage/app/public/category/$category->icon")}}"
-                                        onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                        onerror="this.src='{{asset(assets/front-end/img/image-place-holder.png')}}'"
                                         style="width: 18px; height: 18px; ">
                                     <span
                                         class="{{Session::get('direction') === "rtl" ? 'pr-3' : 'pl-3'}}">{{$category['name']}}</span>
@@ -592,7 +592,7 @@
                                         <?php if ($category->childes->count() > 0) echo "data-toggle='dropdown'"?>
                                         href="{{route('products',['id'=> $category['id'],'data_from'=>'category','page'=>1])}}">
                                         <img src="{{asset("storage/app/public/category/$category->icon")}}"
-                                            onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                            onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                             style="width: 18px; height: 18px; ">
                                         <span
                                             class="{{Session::get('direction') === "rtl" ? 'pr-3' : 'pl-3'}}">{{$category['name']}}</span>

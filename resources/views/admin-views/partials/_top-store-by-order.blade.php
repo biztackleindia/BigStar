@@ -23,7 +23,7 @@
                         </div>
                         <div class="text-center mt-3">
                             <img style="border-radius: 50%;width: 60px;height: 60px;border:2px solid #80808082;"
-                                 onerror="this.src='{{asset('public/assets/back-end/img/160x160/img1.jpg')}}'"
+                                 onerror="this.src='{{asset('assets/back-end/img/160x160/img1.jpg')}}'"
                                  src="{{asset('storage/app/public/shop/'.$shop->image??'')}}">
                         </div>
                         <div class="text-center mt-2">

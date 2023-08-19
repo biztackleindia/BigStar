@@ -53,12 +53,12 @@ class ConfigController extends Controller
                 'shop_image_url' => asset('storage/app/public/shop'),
                 'notification_image_url' => asset('storage/app/public/notification'),
             ],
-            'static_urls' => [
-                'contact_us' => route('contacts'),
-                'brands' => route('brands'),
-                'categories' => route('categories'),
-                'customer_account' => route('user-account'),
-            ],
+            // 'static_urls' => [
+            //     'contact_us' => route('contacts'),
+            //     'brands' => route('brands'),
+            //     'categories' => route('categories'),
+            //     'customer_account' => route('user-account'),
+            // ],
             'about_us' => Helpers::get_business_settings('about_us'),
             'privacy_policy' => Helpers::get_business_settings('privacy_policy'),
             'faq' => HelpTopic::all(),

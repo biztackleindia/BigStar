@@ -1,8 +1,8 @@
 @extends('layouts.back-end.app')
 @section('title', \App\CPU\translate('Contact View'))
 @push('css_or_js')
-    <link href="{{asset('public/assets/back-end')}}/css/select2.min.css" rel="stylesheet"/>
-    <link href="{{asset('public/assets/back-end/css/croppie.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/back-end')}}/css/select2.min.css" rel="stylesheet"/>
+    <link href="{{asset('assets/back-end/css/croppie.css')}}" rel="stylesheet">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 @endpush
 
@@ -30,9 +30,9 @@
                             <div class="row " style="text-align: {{Session::get('direction') === "rtl" ? 'right' : 'left'}};">
                                 <div class="col-md-3 col-lg-3 hidden-xs hidden-sm">
                                     <img
-                                        onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                        onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                         style="height: 8rem; width: 9rem;" class="img-circle"
-                                        src="{{asset('public/assets/front-end')}}/img/contacts/blank.jpg"
+                                        src="{{asset('assets/front-end')}}/img/contacts/blank.jpg"
                                         alt="User Pic">
 
                                 </div>

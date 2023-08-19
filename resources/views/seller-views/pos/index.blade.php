@@ -10,11 +10,11 @@
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="{{asset('public/assets/back-end')}}/css/vendor.min.css">
-    <link rel="stylesheet" href="{{asset('public/assets/back-end')}}/vendor/icon-set/style.css">
+    <link rel="stylesheet" href="{{asset('assets/back-end')}}/css/vendor.min.css">
+    <link rel="stylesheet" href="{{asset('assets/back-end')}}/vendor/icon-set/style.css">
     <!-- CSS Front Template -->
     <meta name="_token" content="{{ csrf_token() }}">
-    <link rel="stylesheet" href="{{asset('public/assets/back-end')}}/css/theme.minc619.css?v=1.0">
+    <link rel="stylesheet" href="{{asset('assets/back-end')}}/css/theme.minc619.css?v=1.0">
     @stack('css_or_js')
 
     <style>
@@ -91,8 +91,8 @@
         }
     </style>
 
-    <script src="{{asset('public/assets/back-end')}}/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside-mini-cache.js"></script>
-    <link rel="stylesheet" href="{{asset('public/assets/back-end')}}/css/toastr.css">
+    <script src="{{asset('assets/back-end')}}/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside-mini-cache.js"></script>
+    <link rel="stylesheet" href="{{asset('assets/back-end')}}/css/toastr.css">
 </head>
 
 <body class="footer-offset">
@@ -102,7 +102,7 @@
         <div class="col-md-12">
             <div id="loading" style="display: none;">
                 <div style="position: fixed;z-index: 9999; left: 40%;top: 37% ;width: 100%">
-                    <img width="200" src="{{asset('public/assets/admin/img/loader.gif')}}">
+                    <img width="200" src="{{asset('assets/admin/img/loader.gif')}}">
                 </div>
             </div>
         </div>
@@ -118,7 +118,7 @@
                 <a class="navbar-brand" href="{{route('seller.dashboard.index')}}" aria-label="Front" style="padding-top: 0!important;padding-bottom: 0!important;">
                     <img class="navbar-brand-logo"
                          style="height: 55px;"
-                         onerror="this.src='{{asset('public/assets/back-end/img/160x160/img2.jpg')}}'"
+                         onerror="this.src='{{asset('assets/back-end/img/160x160/img2.jpg')}}'"
                          src="{{asset("storage/app/public/shop/$shop->image")}}"
                          alt="Logo">
                 </a>
@@ -161,7 +161,7 @@
                                    }'>
                                 <div class="avatar avatar-sm avatar-circle">
                                     <img class="avatar-img"
-                                        onerror="this.src='{{asset('public/assets/back-end/img/160x160/img1.jpg')}}'"
+                                        onerror="this.src='{{asset('assets/back-end/img/160x160/img1.jpg')}}'"
                                         src="{{asset('storage/app/public/seller/')}}/{{auth('seller')->user()->image}}"
                                         alt="Image">
                                     <span class="avatar-status avatar-sm-status avatar-status-success"></span>
@@ -175,7 +175,7 @@
                                     <div class="media align-items-center text-break">
                                         <div class="avatar avatar-sm avatar-circle mr-2">
                                             <img class="avatar-img"
-                                                 onerror="this.src='{{asset('public/assets/back-end/img/160x160/img1.jpg')}}'"
+                                                 onerror="this.src='{{asset('assets/back-end/img/160x160/img1.jpg')}}'"
                                                  src="{{asset('storage/app/public/seller/')}}/{{auth('seller')->user()->image}}"
                                                  alt="Owner image">
                                         </div>
@@ -456,10 +456,10 @@
 <!-- JS Implementing Plugins -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <!-- JS Front -->
-<script src="{{asset('public/assets/back-end')}}/js/vendor.min.js"></script>
-<script src="{{asset('public/assets/back-end')}}/js/theme.min.js"></script>
-<script src="{{asset('public/assets/back-end')}}/js/sweet_alert.js"></script>
-<script src="{{asset('public/assets/back-end')}}/js/toastr.js"></script>
+<script src="{{asset('assets/back-end')}}/js/vendor.min.js"></script>
+<script src="{{asset('assets/back-end')}}/js/theme.min.js"></script>
+<script src="{{asset('assets/back-end')}}/js/sweet_alert.js"></script>
+<script src="{{asset('assets/back-end')}}/js/toastr.js"></script>
 {!! Toastr::message() !!}
 
 @if ($errors->any())
@@ -1278,7 +1278,7 @@
 </script>
 <!-- IE Support -->
 <script>
-    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="{{asset('public/assets/admin')}}/vendor/babel-polyfill/polyfill.min.js"><\/script>');
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="{{asset('assets/admin')}}/vendor/babel-polyfill/polyfill.min.js"><\/script>');
 </script>
 </body>
 </html>

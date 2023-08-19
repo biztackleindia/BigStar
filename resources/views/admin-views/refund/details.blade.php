@@ -68,7 +68,7 @@
                         <div class="col-12 col-sm-6 col-md-2">
                             <div >
                                 <img style="width: 100%; height:100%;"
-                                onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                onerror="this.src='{{asset('sassets/front-end/img/image-place-holder.png')}}'"
                                 src="{{\App\CPU\ProductManager::product_image_path('thumbnail')}}/{{$refund->product!=null?$refund->product->thumbnail:''}}"
                                 alt="VR Collection" >
                             </div>
@@ -243,7 +243,7 @@
                         </table>
                         @if(count($refund->refund_status)==0)
                             <div class="text-center p-4">
-                                <img class="mb-3" src="{{asset('public/assets/back-end')}}/svg/illustrations/sorry.svg" alt="Image Description" style="width: 7rem;">
+                                <img class="mb-3" src="{{asset('assets/back-end')}}/svg/illustrations/sorry.svg" alt="Image Description" style="width: 7rem;">
                                 <p class="mb-0">{{ \App\CPU\translate('No_data_to_show')}}</p>
                             </div>
                         @endif
