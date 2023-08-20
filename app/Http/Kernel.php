@@ -11,6 +11,7 @@ use App\Http\Middleware\DeliveryManAuth;
 use App\Http\Middleware\MaintenanceModeMiddleware;
 use App\Http\Middleware\ModulePermissionMiddleware;
 use App\Http\Middleware\SellerMiddleware;
+use App\Http\Middleware\WebErrorMiddleware;
 use App\Model\Seller;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -79,7 +80,8 @@ class Kernel extends HttpKernel
         'actch' => ActivationCheckMiddleware::class,
         'api_lang' => APILocalizationMiddleware::class,
         'maintenance_mode' => MaintenanceModeMiddleware::class,
-        'delivery_man_auth' => DeliveryManAuth::class
+        'delivery_man_auth' => DeliveryManAuth::class,
+        'web_error' => WeberrorMiddleware::class,
     ];
 
     /**
