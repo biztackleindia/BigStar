@@ -21,7 +21,8 @@ class DeliveryManController extends Controller
         $d_man = $request['delivery_man'];
         $deliery_details = [];
         $orders = Order::with(['shippingAddress', 'customer'])->where(['delivery_man_id' => $d_man['id']])->count();
-        $history = DeliveryHistory::where(['order_id' => $request['order_id'], 'deliveryman_id' => $d_man['id']])->count();
+        $history = Order::with(['shippingAddress', 'customer'])->whereIn('order_status', ['delivered'])
+            ->where(['delivery_man_id' => $d_man['id']])->count();
         array_push($deliery_details, [
             'id' => $d_man['id'],
             'seller_id' => $d_man['seller_id'],
