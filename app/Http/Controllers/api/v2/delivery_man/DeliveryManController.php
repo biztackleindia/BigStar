@@ -18,7 +18,30 @@ class DeliveryManController extends Controller
 {
     public function info(Request $request)
     {
-        return response()->json($request['delivery_man'], 200);
+        $d_man = $request['delivery_man'];
+        $deliery_details = [];
+        $orders = Order::with(['shippingAddress', 'customer'])->where(['delivery_man_id' => $d_man['id']])->count();
+        $history = DeliveryHistory::where(['order_id' => $request['order_id'], 'deliveryman_id' => $d_man['id']])->count();
+        array_push($deliery_details, [
+            'id' => $d_man['id'],
+            'seller_id' => $d_man['seller_id'],
+            'f_name' => $d_man['f_name'],
+            'l_name' => $d_man['l_name'],
+            'phone' => $d_man['phone'],
+            'email' => $d_man['email'],
+            'identity_number' => $d_man['identity_number'],
+            'identity_type' => $d_man['identity_type'],
+            'identity_image' => $d_man['identity_image'],
+            'image' => $d_man['image'],
+            'is_active' => $d_man['is_active'],
+            'fcm_token' => $d_man['fcm_token'],
+            'created_at' => $d_man['created_at'],
+            'updated_at' => $d_man['updated_at'],
+            'total_ delivery' => $orders,
+            'completed_delivery' => $history
+        ]);
+        return response()->json($deliery_details, 200);
+        
     }
 
     public function get_current_orders(Request $request)
