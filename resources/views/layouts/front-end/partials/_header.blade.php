@@ -513,9 +513,7 @@
                                 onclick="location.href='{{route('products',['id'=> $category['id'],'data_from'=>'category','page'=>1])}}'">
                                 <div>
                                    
-                                    <img src="{{asset("storage/category/$category->icon")}}"
-                                        onerror="this.src='{{asset(assets/front-end/img/image-place-holder.png')}}'"
-                                        style="width: 18px; height: 18px; ">
+                                   
                                     <span
                                         class="{{Session::get('direction') === "rtl" ? 'pr-3' : 'pl-3'}}">{{$category['name']}}</span>
                                 </div>
