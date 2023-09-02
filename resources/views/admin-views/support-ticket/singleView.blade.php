@@ -23,7 +23,7 @@
             ?>
             <div class="media pb-4">
                 <img class="rounded-circle" style="width: 40px; height:40px;"
-                     src="{{asset('storage/app/public/profile')}}/{{isset($userDetails)?$userDetails['image']:''}}"
+                     src="{{asset('storage/profile')}}/{{isset($userDetails)?$userDetails['image']:''}}"
                      onerror="this.src='{{asset('assets/back-end/img/160x160/img1.jpg')}}"
                      alt="{{isset($userDetails)?$userDetails['name']:'not found'}}"/>
                 <div class="media-body {{Session::get('direction') === "rtl" ? 'pr-3' : 'pl-3'}}">
@@ -37,7 +37,7 @@
                 @if($conversation['admin_message'] ==null )
                     <div class="media pb-4">
                         <img class="rounded-circle" style="width: 40px; height:40px;"
-                             src="{{asset('storage/app/public/profile')}}/{{isset($userDetails)?$userDetails['image']:''}}"
+                             src="{{asset('storage/profile')}}/{{isset($userDetails)?$userDetails['image']:''}}"
                              onerror="this.src='{{asset('assets/back-end/img/160x160/img1.jpg')}}"
                              alt="{{isset($userDetails)?$userDetails['name']:'not found'}}"/>
                         <div class="media-body {{Session::get('direction') === "rtl" ? 'pr-3' : 'pl-3'}}">

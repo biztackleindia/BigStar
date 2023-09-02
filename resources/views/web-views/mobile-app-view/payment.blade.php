@@ -39,7 +39,7 @@
             <div id="loading" style="display: none;">
                 <div style="position: fixed;z-index: 9999; left: 40%;top: 37% ;width: 100%">
                     <img width="200"
-                         src="{{asset('storage/app/public/company')}}/{{\App\CPU\Helpers::get_business_settings('loader_gif')}}"
+                         src="{{asset('storage/company')}}/{{\App\CPU\Helpers::get_business_settings('loader_gif')}}"
                          onerror="this.src='{{asset('assets/front-end/img/loader.gif')}}'">
                 </div>
             </div>
@@ -125,7 +125,7 @@
                                     data-buttontext="Pay {{(\App\CPU\Convert::usdToinr($amount))*100}} INR"
                                     data-name="{{\App\Model\BusinessSetting::where(['type'=>'company_name'])->first()->value}}"
                                     data-description=""
-                                    data-image="{{asset('storage/app/public/company/'.\App\Model\BusinessSetting::where(['type'=>'company_web_logo'])->first()->value)}}"
+                                    data-image="{{asset('storage/company/'.\App\Model\BusinessSetting::where(['type'=>'company_web_logo'])->first()->value)}}"
                                     data-prefill.name="{{$user->f_name}}"
                                     data-prefill.email="{{$user->email}}"
                                     data-theme.color="#ff7529">

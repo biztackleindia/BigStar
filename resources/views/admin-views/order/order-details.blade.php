@@ -248,7 +248,7 @@
                                             <img
                                                 class="avatar-img" style="width: 55px;height: 55px; border-radius: 50%;"
                                                 onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                                src="{{asset('storage/app/public/company/'.\App\CPU\Helpers::get_business_settings('company_web_logo'))}}"
+                                                src="{{asset('storage/company/'.\App\CPU\Helpers::get_business_settings('company_web_logo'))}}"
                                                 alt="Image">
                                             <p class="sellerName">
                                                 <a style="color: black;"
@@ -265,7 +265,7 @@
                                                 <img
                                                     class="avatar-img" style="width: 55px;height: 55px; border-radius: 50%;"
                                                     onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                                    src="{{asset('storage/app/public/shop/'.$shop->image)}}"
+                                                    src="{{asset('storage/shop/'.$shop->image)}}"
                                                     alt="Image">
                                                 <p class="sellerName">
                                                     <a style="color: black;"
@@ -481,7 +481,7 @@
                                     <img
                                         class="avatar-img" style="width: 75px;height: 42px"
                                         onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                        src="{{asset('storage/app/public/profile/'.$order->customer->image)}}"
+                                        src="{{asset('storage/profile/'.$order->customer->image)}}"
                                         alt="Image">
                                 </div>
                                 <div class="media-body">
@@ -899,7 +899,7 @@
 
             google.maps.event.addListener(marker, 'click', (function (marker) {
                 return function () {
-                    infowindow.setContent("<div style='float:left'><img style='max-height:40px;wide:auto;' src='{{asset('storage/app/public/profile/')}}{{$order->customer->image??""}}'></div><div style='float:right; padding: 10px;'><b>{{$order->customer->f_name??""}} {{$order->customer->l_name??""}}</b><br/>{{$shipping_address->address??""}}</div>");
+                    infowindow.setContent("<div style='float:left'><img style='max-height:40px;wide:auto;' src='{{asset('storage/profile/')}}{{$order->customer->image??""}}'></div><div style='float:right; padding: 10px;'><b>{{$order->customer->f_name??""}} {{$order->customer->l_name??""}}</b><br/>{{$shipping_address->address??""}}</div>");
                     infowindow.open(map, marker);
                 }
             })(marker));

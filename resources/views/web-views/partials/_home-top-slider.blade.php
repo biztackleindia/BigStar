@@ -33,7 +33,7 @@
                         <a href="{{$banner['url']}}">
                             <img class="d-block w-100" style="max-height: 372px;"
                                  onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                 src="{{asset('storage/app/public/banner')}}/{{$banner['photo']}}"
+                                 src="{{asset('storage/banner')}}/{{$banner['photo']}}"
                                  alt="">
                         </a>
                     </div>
@@ -58,7 +58,7 @@
                        style="cursor: pointer;">
                         <img class="d-block footer_banner_img" style="width: 100%"
                              onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                             src="{{asset('storage/app/public/banner')}}/{{$banner['photo']}}">
+                             src="{{asset('storage/banner')}}/{{$banner['photo']}}">
                     </a>
                 </div>
                 <div class="modal fade" id="quick_banner{{$banner->id}}" tabindex="-1"
@@ -77,7 +77,7 @@
                             <div class="modal-body">
                                 <img class="d-block mx-auto"
                                      onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                     src="{{asset('storage/app/public/banner')}}/{{$banner['photo']}}">
+                                     src="{{asset('storage/banner')}}/{{$banner['photo']}}">
                                 @if ($banner->url!="")
                                     <div class="text-center mt-2">
                                         <a href="{{$banner->url}}"

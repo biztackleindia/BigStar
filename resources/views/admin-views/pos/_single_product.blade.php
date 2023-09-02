@@ -5,7 +5,7 @@
 <div class="product-card card" onclick="quickView('{{$product->id}}')" style="cursor: pointer;">
     <div class="card-header inline_product clickable p-0" style="height:134px;width:100%;overflow:hidden;">
         <div class="d-flex align-items-center justify-content-center d-block">
-            <img src="{{asset('storage/app/public/product/thumbnail')}}/{{$product->thumbnail}}"
+            <img src="{{asset('storage/product/thumbnail')}}/{{$product->thumbnail}}"
                  onerror="this.src='{{asset('assets/back-end/img/160x160/img2.jpg')}}'"
                  style="width: 100%; border-radius: 5%;">
         </div>

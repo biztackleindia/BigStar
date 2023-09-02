@@ -76,7 +76,7 @@
                             <div class="col-md-6 mb-3">
                                 <div class="text-center">
                                     <img style="border-radius: 10px; max-height:170px;" id="viewer"
-                                        src="{{asset('storage/app/public/brand')}}/{{$b['image']}}" alt="banner image"/>
+                                        src="{{asset('storage/brand')}}/{{$b['image']}}" alt="banner image"/>
                                 </div>
                             </div>
                         </div>

@@ -119,7 +119,7 @@
                     <img class="navbar-brand-logo"
                          style="height: 55px;"
                          onerror="this.src='{{asset('assets/back-end/img/160x160/img2.jpg')}}'"
-                         src="{{asset("storage/app/public/shop/$shop->image")}}"
+                         src="{{asset("storage/shop/$shop->image")}}"
                          alt="Logo">
                 </a>
             </div>
@@ -162,7 +162,7 @@
                                 <div class="avatar avatar-sm avatar-circle">
                                     <img class="avatar-img"
                                         onerror="this.src='{{asset('assets/back-end/img/160x160/img1.jpg')}}'"
-                                        src="{{asset('storage/app/public/seller/')}}/{{auth('seller')->user()->image}}"
+                                        src="{{asset('storage/seller/')}}/{{auth('seller')->user()->image}}"
                                         alt="Image">
                                     <span class="avatar-status avatar-sm-status avatar-status-success"></span>
                                 </div>
@@ -176,7 +176,7 @@
                                         <div class="avatar avatar-sm avatar-circle mr-2">
                                             <img class="avatar-img"
                                                  onerror="this.src='{{asset('assets/back-end/img/160x160/img1.jpg')}}'"
-                                                 src="{{asset('storage/app/public/seller/')}}/{{auth('seller')->user()->image}}"
+                                                 src="{{asset('storage/seller/')}}/{{auth('seller')->user()->image}}"
                                                  alt="Owner image">
                                         </div>
                                         <div class="media-body">

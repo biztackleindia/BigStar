@@ -9,10 +9,10 @@
                 <a class="navbar-brand" href="{{route('admin.dashboard.index')}}" aria-label="">
                     <img class="navbar-brand-logo" style="max-height: 42px;"
                          onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                         src="{{asset("storage/app/public/company/$e_commerce_logo")}}" alt="Logo">
+                         src="{{asset("storage/company/$e_commerce_logo")}}" alt="Logo">
                     <img class="navbar-brand-logo-mini" style="max-height: 42px;"
                          onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                         src="{{asset("storage/app/public/company/$e_commerce_logo")}}"
+                         src="{{asset("storage/company/$e_commerce_logo")}}"
                          alt="Logo">
                 </a>
                 <!-- End Logo -->
@@ -146,7 +146,7 @@
                                 <div class="avatar avatar-sm avatar-circle">
                                     <img class="avatar-img"
                                          onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                         src="{{asset('storage/app/public/admin')}}/{{auth('admin')->user()->image}}"
+                                         src="{{asset('storage/admin')}}/{{auth('admin')->user()->image}}"
                                          alt="Image Description">
                                     <span class="avatar-status avatar-sm-status avatar-status-success"></span>
                                 </div>
@@ -160,7 +160,7 @@
                                         <div class="avatar avatar-sm avatar-circle mr-2">
                                             <img class="avatar-img"
                                                  onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                                 src="{{asset('storage/app/public/admin')}}/{{auth('admin')->user()->image}}"
+                                                 src="{{asset('storage/admin')}}/{{auth('admin')->user()->image}}"
                                                  alt="Image Description">
                                         </div>
                                         <div class="media-body">

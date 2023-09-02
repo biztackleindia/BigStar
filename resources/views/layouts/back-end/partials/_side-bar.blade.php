@@ -50,7 +50,7 @@
                         <img 
                              onerror="this.src='{{asset('assets/back-end/img/900x400/img1.jpg')}}'"
                              class="navbar-brand-logo-mini for-web-logo" style="max-width: 135px !important;"
-                             src="{{asset("storage/app/public/company/$e_commerce_logo")}}" alt="Logo">
+                             src="{{asset("storage/company/$e_commerce_logo")}}" alt="Logo">
                     </a>
                     <!-- Navbar Vertical Toggle -->
                     <button type="button"

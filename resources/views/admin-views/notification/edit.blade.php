@@ -49,7 +49,7 @@
                                 <hr>
                                 <center>
                                     <img style="width: 20%;max-height:200px;border: 1px solid; border-radius: 10px;" id="viewer"
-                                         src="{{asset('storage/app/public/notification')}}/{{$notification['image']}}"
+                                         src="{{asset('storage/notification')}}/{{$notification['image']}}"
                                          alt="image"/>
                                 </center>
                             </div>

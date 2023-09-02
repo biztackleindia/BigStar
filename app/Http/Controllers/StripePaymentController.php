@@ -55,7 +55,7 @@ class StripePaymentController extends Controller
                     'unit_amount' => round($value, 2) * 100,
                     'product_data' => [
                         'name' => BusinessSetting::where(['type' => 'company_name'])->first()->value,
-                        'images' => [asset('storage/app/public/company') . '/' . Helpers::get_business_settings('company_web_logo')],
+                        'images' => [asset('storage/company') . '/' . Helpers::get_business_settings('company_web_logo')],
                     ],
                 ],
                 'quantity' => 1,

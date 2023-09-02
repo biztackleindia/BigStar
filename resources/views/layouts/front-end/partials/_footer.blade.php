@@ -147,7 +147,7 @@
                 <div class="col-md-3 d-flex justify-content-start align-items-center footer-web-logo" >
                     <a class="d-inline-block mt-n1" href="{{route('home')}}">
                         <img style="max-height: 70px;max-width: 180px;"
-                             src="{{asset("storage/app/public/company/")}}/{{ $web_config['footer_logo']->value }}"
+                             src="{{asset("storage/company/")}}/{{ $web_config['footer_logo']->value }}"
                              onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                              alt="{{ $web_config['name']->value }}"/>
                     </a>

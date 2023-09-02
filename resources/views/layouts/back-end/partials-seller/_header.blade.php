@@ -10,10 +10,10 @@
                     @if (isset($shop))
                     <img class="navbar-brand-logo" style="max-height: 42px;"
                             onerror="this.src='{{asset('assets/back-end/img/160x160/img1.jpg')}}'"
-                            src="{{asset("storage/app/public/shop/$shop->image")}}" alt="Logo" height="40" width="40">
+                            src="{{asset("storage/shop/$shop->image")}}" alt="Logo" height="40" width="40">
                     <img class="navbar-brand-logo-mini" style="max-height: 42px;"
                             onerror="this.src='{{asset('assets/back-end/img/160x160/img1.jpg')}}'"
-                            src="{{asset("storage/app/public/shop/$shop->image")}}"
+                            src="{{asset("storage/shop/$shop->image")}}"
                             alt="Logo" height="40" width="40">
 
                     @else
@@ -134,10 +134,10 @@
                                      "type": "css-animation"
                                    }'>
                                 <div class="avatar avatar-sm avatar-circle">
-                                    {{-- <img src="{{asset('storage/app/public/seller/'.auth('seller')->user()->image)}}"  onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'" class="img-profile rounded-circle"> --}}
+                                    {{-- <img src="{{asset('storage/seller/'.auth('seller')->user()->image)}}"  onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'" class="img-profile rounded-circle"> --}}
                                     <img class="avatar-img"
                                          onerror="this.src='{{asset('assets/back-end/img/160x160/img1.jpg')}}'"
-                                         src="{{asset('storage/app/public/seller/')}}/{{auth('seller')->user()->image}}"
+                                         src="{{asset('storage/seller/')}}/{{auth('seller')->user()->image}}"
                                          alt="Image Description">
                                     <span class="avatar-status avatar-sm-status avatar-status-success"></span>
                                 </div>
@@ -149,10 +149,10 @@
                                 <div class="dropdown-item-text">
                                     <div class="media align-items-center text-break">
                                         <div class="avatar avatar-sm avatar-circle mr-2">
-                                            {{-- <img src="{{asset('storage/app/public/seller/'.auth('seller')->user()->image)}}"  onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'" class="img-profile rounded-circle"> --}}
+                                            {{-- <img src="{{asset('storage/seller/'.auth('seller')->user()->image)}}"  onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'" class="img-profile rounded-circle"> --}}
                                             <img class="avatar-img"
                                                  onerror="this.src='{{asset('assets/back-end/img/160x160/img1.jpg')}}'"
-                                                 src="{{asset('storage/app/public/seller/')}}/{{auth('seller')->user()->image}}"
+                                                 src="{{asset('storage/seller/')}}/{{auth('seller')->user()->image}}"
                                                  alt="Image Description">
                                         </div>
                                         <div class="media-body">
