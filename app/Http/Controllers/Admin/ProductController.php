@@ -250,7 +250,7 @@ class ProductController extends BaseController
         $p->video_url = $request->video_link;
         $p->unit_weight = $request->unit_weight;
         $p->product_sku = $request->product_sku;
-        $p->product_reward_point = $request->product_reward_point;
+        $p->product_reward_point = $request->product_reward_point ? $request->product_reward_point : 0;
         $p->request_status = 1;
         $p->shipping_cost = BackEndHelper::currency_to_usd($request->shipping_cost);
         $p->multiply_qty = $request->multiplyQTY=='on'?1:0;
@@ -694,7 +694,7 @@ class ProductController extends BaseController
         $product->video_url = $request->video_link;
         $product->unit_weight = $request->unit_weight;
         $product->product_sku = $request->product_sku;
-        $product->product_reward_point = $request->product_reward_point;
+        $product->product_reward_point = $request->product_reward_point ? $request->product_reward_point : 0;
         if ($product->added_by == 'seller' && $product->request_status == 2) {
             $product->request_status = 1;
         }
