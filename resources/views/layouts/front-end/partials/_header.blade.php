@@ -512,13 +512,11 @@
                                 href="javascript:"
                                 onclick="location.href='{{route('products',['id'=> $category['id'],'data_from'=>'category','page'=>1])}}'">
                                 <div>
-                                    <img src="{{asset("storage/app/public/category/$category->icon")}}"
-                                        onerror="this.src='{{asset(assets/front-end/img/image-place-holder.png')}}'"
-                                        style="width: 18px; height: 18px; ">
+                                   
                                     <span
                                         class="{{Session::get('direction') === "rtl" ? 'pr-3' : 'pl-3'}}">{{$category['name']}}</span>
                                 </div>
-                                @if ($category->childes->count() > 0)
+                                @if($category->childes->count() > 0)
                                 <div>
                                     <i class="czi-arrow-{{Session::get('direction') === "rtl" ? 'left' : 'right'}}"
                                         style="font-size: 8px !important;background:none !important;color:#4B5864;"></i>

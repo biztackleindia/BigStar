@@ -17,6 +17,8 @@ use Illuminate\Support\Facades\Mail;
 //for maintenance mode
 Route::get('/', 'Web\WebController@web_maintenance_mode')->name('maintenance-mode');
 Route::get('/home', 'Web\WebController@web_maintenance_mode')->name('home');
+Route::get('terms', 'Web\WebController@termsandCondition')->name('terms');
+Route::get('privacy-policy', 'Web\WebController@privacy_policy')->name('privacy-policy');
 
 Route::group(['middleware'=>['web_error']], function () {
 
@@ -51,17 +53,16 @@ Route::group(['namespace' => 'Web','middleware'=>['maintenance_mode']], function
 
     Route::get('categories', 'WebController@all_categories')->name('categories');
     Route::get('category-ajax/{id}', 'WebController@categories_by_category')->name('category-ajax');
-// pincode checking
-Route::post('avilable-pincode', 'WebController@PincodeChecking')->name('avilable_pincode');
-// 
-Route::post('approve_msg', 'WebController@ApproveMsg')->name('approve_msg');
+    // pincode checking
+    Route::post('avilable-pincode', 'WebController@PincodeChecking')->name('avilable_pincode');
+    // 
+    Route::post('approve_msg', 'WebController@ApproveMsg')->name('approve_msg');
     Route::get('brands', 'WebController@all_brands')->name('brands');
     Route::get('sellers', 'WebController@all_sellers')->name('sellers');
     Route::get('seller-profile/{id}', 'WebController@seller_profile')->name('seller-profile');
 
     Route::get('flash-deals/{id}', 'WebController@flash_deals')->name('flash-deals');
-    Route::get('terms', 'WebController@termsandCondition')->name('terms');
-    Route::get('privacy-policy', 'WebController@privacy_policy')->name('privacy-policy');
+    
 
     Route::get('/product/{slug}', 'WebController@product')->name('product');
     Route::get('products', 'WebController@products')->name('products');
