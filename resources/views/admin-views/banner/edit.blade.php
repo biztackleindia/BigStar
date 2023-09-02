@@ -121,7 +121,7 @@
                                             <img
                                                 style="width: auto;border: 1px solid; border-radius: 10px; max-width:400px;"
                                                 id="mbImageviewer"
-                                                src="{{asset('storage/app/public/banner')}}/{{$banner['photo']}}"
+                                                src="{{asset('storage/banner')}}/{{$banner['photo']}}"
                                                 alt=""/>
                                         </center>
                                     </div>

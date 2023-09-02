@@ -13,13 +13,13 @@
     <!-- Viewport-->
 
     @if($product['meta_image']!=null)
-        <meta property="og:image" content="{{asset("storage/app/public/product/meta")}}/{{$product->meta_image}}"/>
+        <meta property="og:image" content="{{asset("storage/product/meta")}}/{{$product->meta_image}}"/>
         <meta property="twitter:card"
-              content="{{asset("storage/app/public/product/meta")}}/{{$product->meta_image}}"/>
+              content="{{asset("storage/product/meta")}}/{{$product->meta_image}}"/>
     @else
-        <meta property="og:image" content="{{asset("storage/app/public/product/thumbnail")}}/{{$product->thumbnail}}"/>
+        <meta property="og:image" content="{{asset("storage/product/thumbnail")}}/{{$product->thumbnail}}"/>
         <meta property="twitter:card"
-              content="{{asset("storage/app/public/product/thumbnail/")}}/{{$product->thumbnail}}"/>
+              content="{{asset("storage/product/thumbnail/")}}/{{$product->thumbnail}}"/>
     @endif
 
     @if($product['meta_title']!=null)
@@ -257,8 +257,8 @@
                                             id="image{{$key}}">
                                             <img class="cz-image-zoom img-responsive" style="width:100%;height:auto"
                                                 onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                                src="{{asset("storage/app/public/product/$photo")}}"
-                                                data-zoom="{{asset("storage/app/public/product/$photo")}}"
+                                                src="{{asset("storage/product/$photo")}}"
+                                                data-zoom="{{asset("storage/product/$photo")}}"
                                                 alt="Product image" width="">
                                             <div class="cz-image-zoom-pane"></div>
                                         </div>
@@ -277,7 +277,7 @@
                                                             href="#image{{$key}}">
                                                                 <img
                                                                     onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                                                    src="{{asset("storage/app/public/product/$photo")}}"
+                                                                    src="{{asset("storage/product/$photo")}}"
                                                                     alt="Product thumb">
                                                             </a>
                                                         </div>
@@ -775,8 +775,8 @@
             
             @if($product_category[0]->sub_categoty_video!=null)
             <video controls autoplay style="    width: inherit;">
-            <source src="{{asset("storage/app/public/videos")}}/{{$product_category[0]->sub_categoty_video}}" type="video/mp4">
-            <source src="{{asset("storage/app/public/videos")}}/{{$product_category[0]->sub_categoty_video}}" type="video/ogg">
+            <source src="{{asset("storage/videos")}}/{{$product_category[0]->sub_categoty_video}}" type="video/mp4">
+            <source src="{{asset("storage/videos")}}/{{$product_category[0]->sub_categoty_video}}" type="video/ogg">
             Your browser does not support the video tag.
             </video>
             @else 

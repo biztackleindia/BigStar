@@ -8,7 +8,7 @@
                 <img style="max-height: 64px;"
                     class="rounded-circle" width="64"
                     onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                    src="{{asset("storage/app/public/profile")}}/{{(isset($productReview->user)?$productReview->user->image:'')}}"
+                    src="{{asset("storage/profile")}}/{{(isset($productReview->user)?$productReview->user->image:'')}}"
                     alt="{{isset($productReview->user)?$productReview->user->f_name:'not exist'}}"/>
                 <div
                     class="media-body {{Session::get('direction') === "rtl" ? 'pr-3' : 'pl-3'}} text-body">
@@ -32,10 +32,10 @@
                 @foreach (json_decode($productReview->attachment) as $key => $photo)
                     <img
                         style="cursor: pointer;border-radius: 5px;border:1px;border-color: #7a6969; height: 67px ; margin-{{Session::get('direction') === "rtl" ? 'left' : 'right'}}: 5px;"
-                        onclick="showInstaImage('{{asset("storage/app/public/review/$photo")}}')"
+                        onclick="showInstaImage('{{asset("storage/review/$photo")}}')"
                         class="cz-image-zoom"
                         onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                        src="{{asset("storage/app/public/review/$photo")}}"
+                        src="{{asset("storage/review/$photo")}}"
                         alt="Product review" width="67">
                 @endforeach
             @endif

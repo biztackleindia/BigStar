@@ -95,7 +95,7 @@
                                             <center>
                                                 <img style="width: 20%;border: 1px solid; border-radius: 10px;"
                                                      id="viewer"
-                                                     src="{{asset('storage/app/public/category')}}/{{$category['icon']}}"
+                                                     src="{{asset('storage/category')}}/{{$category['icon']}}"
                                                      alt=""/>
                                             </center>
                                         </div>
@@ -118,8 +118,8 @@
                                 <video id="viewerWFL" src="" style="width: 100px; margin-left: 15px;"></video>
                                 @if($category['sub_categoty_video']!=null)
                                 <video controls  style="    width: inherit;    height: 88px;">
-                                <source src="{{asset('storage/app/public/videos')}}/{{$category['sub_categoty_video']}}" type="video/mp4">
-                                <source src="{{asset('storage/app/public/videos')}}/{{$category['sub_categoty_video']}}" type="video/ogg">
+                                <source src="{{asset('storage/videos')}}/{{$category['sub_categoty_video']}}" type="video/mp4">
+                                <source src="{{asset('storage/videos')}}/{{$category['sub_categoty_video']}}" type="video/ogg">
                                 Your browser does not support the video tag.
                                 </video>
                                 @endif

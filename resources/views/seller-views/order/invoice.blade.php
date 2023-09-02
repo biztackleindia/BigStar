@@ -346,7 +346,7 @@
     <table class="content-position">
         <tr>
             <th style="text-align: left">
-                <img height="70" width="200" src="{{asset("storage/app/public/company/$company_web_logo")}}"
+                <img height="70" width="200" src="{{asset("storage/company/$company_web_logo")}}"
                      alt="">
             </th>
             <th style="text-align: right">

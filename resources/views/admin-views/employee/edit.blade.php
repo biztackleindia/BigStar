@@ -82,7 +82,7 @@
                                     <div class="text-center">
                                         <img style="width: auto;border: 1px solid; border-radius: 10px; max-height:200px;" id="viewer"
                                         onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                        src="{{asset('storage/app/public/admin')}}/{{$e['image']}}" alt="Employee thumbnail"/>
+                                        src="{{asset('storage/admin')}}/{{$e['image']}}" alt="Employee thumbnail"/>
                                     </div>
                                 </div>
                             </div>

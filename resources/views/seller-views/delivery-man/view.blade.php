@@ -41,7 +41,7 @@
                         <div class="d-flex align-items-center">
                             <img class="avatar avatar-xxl avatar-4by3 mr-4"
                                  onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
-                                 src="{{asset('storage/app/public/delivery-man')}}/{{$dm['image']}}"
+                                 src="{{asset('storage/delivery-man')}}/{{$dm['image']}}"
                                  alt="Image Description">
                             <div class="d-block">
                                 <h4 class="display-2 text-dark mb-0">{{count($dm->rating)>0?number_format($dm->rating[0]->average, 2, '.', ' '):0}}</h4>
@@ -174,7 +174,7 @@
                                     <div class="avatar avatar-circle">
                                         <img class="avatar-img" width="75" height="75"
                                              onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
-                                             src="{{asset('storage/app/public/profile/'.$review->customer->image)}}"
+                                             src="{{asset('storage/profile/'.$review->customer->image)}}"
                                              alt="Image Description">
                                     </div>
                                     <div class="ml-3">

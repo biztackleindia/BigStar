@@ -460,7 +460,7 @@
                                                 <div class="chat_img">
                                                     <img
                                                         onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                                        src="{{asset('storage/app/public/shop/'.$shop->image)}}"
+                                                        src="{{asset('storage/shop/'.$shop->image)}}"
                                                         style="border-radius: 10px">
                                                 </div>
                                                 <div class="chat_ib">
@@ -489,7 +489,7 @@
                                                 @if ($chat->sent_by_seller)
                                                     <div class="incoming_msg">
                                                         <div class="incoming_msg_img"><img
-                                                                src="@if($chat->image == 'def.png'){{asset('storage/app/public/'.$chat->image)}} @else {{asset('storage/app/public/shop/'.$chat->image)}} @endif"
+                                                                src="@if($chat->image == 'def.png'){{asset('storage/'.$chat->image)}} @else {{asset('storage/shop/'.$chat->image)}} @endif"
                                                                 alt="sunil"></div>
                                                         <div class="received_msg">
                                                             <div class="received_withd_msg">
@@ -601,7 +601,7 @@
                                     )
 
                                 } else {
-                                    let img_path = element.image == 'def.png' ? `${window.location.origin}/storage/app/public/${element.image}` : `${window.location.origin}/storage/app/public/shop/${element.image}`;
+                                    let img_path = element.image == 'def.png' ? `${window.location.origin}/storage/${element.image}` : `${window.location.origin}/storage/shop/${element.image}`;
 
                                     $(".msg_history").append(`
                     <div class="incoming_msg" style="display: flex;" id="incoming_msg">

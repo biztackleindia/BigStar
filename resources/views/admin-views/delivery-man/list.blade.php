@@ -87,7 +87,7 @@
                                         <div style="overflow-x: hidden;overflow-y: hidden">
                                             <img width="60" style="border-radius: 50%;height: 60px; width: 60px;"
                                                  onerror="this.src='{{asset('assets/back-end/img/160x160/img1.jpg')}}'"
-                                                 src="{{asset('storage/app/public/delivery-man')}}/{{$dm['image']}}">
+                                                 src="{{asset('storage/delivery-man')}}/{{$dm['image']}}">
                                         </div>
                                     </td>
                                     <td>

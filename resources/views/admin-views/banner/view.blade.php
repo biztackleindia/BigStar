@@ -199,7 +199,7 @@
                                         <td>
                                             <img width="80"
                                                  onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                                 src="{{asset('storage/app/public/banner')}}/{{$banner['photo']}}">
+                                                 src="{{asset('storage/banner')}}/{{$banner['photo']}}">
                                         </td>
                                         <td>{{$banner->banner_type}}</td>
                                         <td><label class="switch"><input type="checkbox" class="status"

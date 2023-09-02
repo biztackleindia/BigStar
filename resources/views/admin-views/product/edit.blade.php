@@ -378,7 +378,7 @@
                                                     <div class="card-body">
                                                         <img style="width: 100%" height="auto"
                                                              onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                                             src="{{asset("storage/app/public/product/meta")}}/{{$product['meta_image']}}"
+                                                             src="{{asset("storage/product/meta")}}/{{$product['meta_image']}}"
                                                              alt="Meta image">
                                                     </div>
                                                 </div>
@@ -414,7 +414,7 @@
                                                         <div class="card-body">
                                                             <img style="width: 100%" height="auto"
                                                                  onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                                                 src="{{asset("storage/app/public/product/$photo")}}"
+                                                                 src="{{asset("storage/product/$photo")}}"
                                                                  alt="Product image">
                                                             <a href="{{route('admin.product.remove-image',['id'=>$product['id'],'name'=>$photo])}}"
                                                                class="btn btn-danger btn-block">{{\App\CPU\translate('Remove')}}</a>
@@ -440,7 +440,7 @@
                                                 <div class="card-body">
                                                     <img style="width: 100%" height="auto"
                                                          onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                                         src="{{asset("storage/app/public/product/thumbnail")}}/{{$product['thumbnail']}}"
+                                                         src="{{asset("storage/product/thumbnail")}}/{{$product['thumbnail']}}"
                                                          alt="Product image">
                                                 </div>
                                             </div>

@@ -291,7 +291,7 @@
                                          id="user_{{$chatting->user_id}}">
                                         <div class="chat_people" id="chat_people">
                                             <div class="chat_img">
-                                                <img src="{{asset('storage/app/public/profile/'.$chatting->image)}}"
+                                                <img src="{{asset('storage/profile/'.$chatting->image)}}"
                                                      onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                                      style="border-radius: 15px; width: 30px; height: 30px">
                                             </div>
@@ -318,7 +318,7 @@
                                                 <div class="incoming_msg">
                                                     <div class="incoming_msg_img">
                                                         <img style="width: 30px;height: 30px;border-radius: 50%"
-                                                             src="{{asset('storage/app/public/profile/'.$message->image)}}"
+                                                             src="{{asset('storage/profile/'.$message->image)}}"
                                                              onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                                              alt="">
                                                     </div>
@@ -435,7 +435,7 @@
                                     $(".msg_history").append(`
                   <div class="incoming_msg" id="incoming_msg">
                     <div class="incoming_msg_img" id="">
-                      <img src="${window.location.origin}/storage/app/public/profile/${element.image}" style="border-radius: 10px;" alt="">
+                      <img src="${window.location.origin}/storage/profile/${element.image}" style="border-radius: 10px;" alt="">
                     </div>
                     <div class="received_msg">
                       <div class="received_withd_msg">

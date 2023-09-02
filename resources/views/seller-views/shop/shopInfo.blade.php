@@ -23,7 +23,7 @@
                                 </div>
                             @else
                                 <div class="col-md-3 text-{{Session::get('direction') === "rtl" ? 'right' : 'left'}}">
-                                    <img src="{{asset('storage/app/public/shop/'.$shop->image)}}"
+                                    <img src="{{asset('storage/shop/'.$shop->image)}}"
                                          onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                          class="rounded-circle border"
                                          height="200" width="200" alt="">

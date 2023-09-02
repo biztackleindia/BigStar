@@ -282,7 +282,7 @@
                                      <div class="card-body">
                                          <img style="width: 100%"
                                               onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                              src="{{asset("storage/app/public/product/$photo")}}" alt="Product image">
+                                              src="{{asset("storage/product/$photo")}}" alt="Product image">
 
                                      </div>
                                  </div>
@@ -322,7 +322,7 @@
                                         <img
                                             class="avatar-img"
                                             onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                            src="{{asset('storage/app/public/profile/')}}{{$review->customer->image??""}}"
+                                            src="{{asset('storage/profile/')}}{{$review->customer->image??""}}"
                                             alt="Image Description">
                                     </div>
                                     <div class="{{Session::get('direction') === "rtl" ? 'mr-3' : 'ml-3'}}">

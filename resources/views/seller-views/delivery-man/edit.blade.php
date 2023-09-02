@@ -111,7 +111,7 @@
 
                                 @foreach(json_decode($delivery_man['identity_image'],true) as $img)
                                     <div class="col-md-4 col-12 mb-2">
-                                        <img height="150" src="{{asset('storage/app/public/delivery-man').'/'.$img}}">
+                                        <img height="150" src="{{asset('storage/delivery-man').'/'.$img}}">
                                     </div>
                                 @endforeach
                                 <hr>
@@ -132,7 +132,7 @@
                                 <hr>
                                 <center>
                                     <img style="height: 200px;border: 1px solid; border-radius: 10px;" id="viewer"
-                                         src="{{asset('storage/app/public/delivery-man').'/'.$delivery_man['image']}}" alt="delivery-man image"/>
+                                         src="{{asset('storage/delivery-man').'/'.$delivery_man['image']}}" alt="delivery-man image"/>
                                 </center>
                             </div>
                             

@@ -49,7 +49,7 @@
                         @if (isset($shop))
                             <img onerror="this.src='{{asset('assets/back-end/img/900x400/img1.jpg')}}'"
                                 class="navbar-brand-logo-mini for-seller-logo"
-                                src="{{asset("storage/app/public/shop/$shop->image")}}" alt="Logo">
+                                src="{{asset("storage/shop/$shop->image")}}" alt="Logo">
                         @else
                             <img class="navbar-brand-logo-mini for-seller-logo"
                                 src="{{asset('assets/back-end/img/900x400/img1.jpg')}}" alt="Logo">
