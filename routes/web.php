@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Mail;
 
 //for maintenance mode
 Route::get('/', 'Web\WebController@web_maintenance_mode')->name('maintenance-mode');
+Route::get('/user/delete', 'HomeController@DeleteUser')->name('userDelete');
+Route::post('/user/delete', 'HomeController@DeleteUserPost')->name('userDeletePost');
 Route::get('/home', 'Web\WebController@web_maintenance_mode')->name('home');
 Route::get('terms', 'Web\WebController@termsandCondition')->name('terms');
 Route::get('privacy-policy', 'Web\WebController@privacy_policy')->name('privacy-policy');
